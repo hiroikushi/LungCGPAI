@@ -2,3 +2,4 @@ matplotlib
 scikit-learn
 seaborn
 streamlit
+xgboost
