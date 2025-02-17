@@ -98,8 +98,7 @@ if button:
     pred = 0
     fold = 5
     for i in range(fold):
-        #model = pickle.load(open(f'{path}/lungallmodel/xgb_241202_all_cv_{i}_calib.pkl', 'rb'))
-        model = pickle.load(open('./lungallmodel/xgb_241202_all_cv_{i}_calib.pkl', 'rb'))
+        model = pickle.load(open(f'{path}/lungallmodel/xgb_241202_all_cv_{i}_calib.pkl', 'rb'))
         pred += model.predict_proba([input])[:, 1][0] / fold
     pred *= 100
 
